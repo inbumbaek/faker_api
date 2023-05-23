@@ -25,24 +25,24 @@ const companyObject = () => ({
     },
 });
 
-// app.get("/api/users/new", (request, response) => {
-//     const newUser = userObject();
-//     response.json(newUser);
-// });
+app.get("/api/users/new", (request, response) => {
+    const newUser = userObject();
+    response.json(newUser);
+});
 
-// app.get("/api/companies/new", (request, response) => {
-//     const newCompany = companyObject();
-//     response.json(newCompany);
-// });
+app.get("/api/companies/new", (request, response) => {
+    const newCompany = companyObject();
+    response.json(newCompany);
+});
 
-// app.get("/api/user/company", (request, response) => {
-//     const newUser = userObject();
-//     const newCompany = companyObject();
-//     const userCompany = {
-//         user: newUser,
-//         company: newCompany,
-//     };
-//     response.json(userCompany);
-// });
+app.get("/api/user/company", (request, response) => {
+    const newUser = userObject();
+    const newCompany = companyObject();
+    const userCompany = {
+        user: newUser,
+        company: newCompany,
+    };
+    response.json(userCompany);
+});
 
-// app.listen( port, () => console.log(`Listening on port: ${port}`));
+app.listen( port, () => console.log(`Listening on port: ${port}`));
