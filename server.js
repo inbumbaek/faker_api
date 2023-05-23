@@ -13,17 +13,17 @@ const userObject = () => ({
     password: faker.internet.password(),
 });
 
-// const companyObject = () => ({
-//     _id: faker.datatype.uuid(),
-//     name: faker.company.companyName(),
-//     address: {
-//         street: faker.address.streetAddress(),
-//         city: faker.address.city(),
-//         state: faker.address.state(),
-//         zipCode: faker.address.zipCode(),
-//         country: faker.address.country(),
-//     },
-// });
+const companyObject = () => ({
+    _id: faker.datatype.uuid(),
+    name: faker.company.companyName(),
+    address: {
+        street: faker.address.streetAddress(),
+        city: faker.address.city(),
+        state: faker.address.state(),
+        zipCode: faker.address.zipCode(),
+        country: faker.address.country(),
+    },
+});
 
 // app.get("/api/users/new", (request, response) => {
 //     const newUser = userObject();
